@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="{{ containerStyle }}">
+  <div style="{{ stripeStyle }}"></div>
+  <div style="position:relative; z-index:1; text-align:center; padding:20px;">
+    <div style="font-family:'Inter',monospace; font-size:12px; letter-spacing:0.06em; color:#5B5548; background:rgba(250,246,238,0.85); border:1px solid #D8CBA9; border-radius:6px; padding:8px 14px; display:inline-block;">{{ label }}</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:400,&quot;height&quot;:260}, &quot;label&quot;: {&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Ronald with a family at a community visit&quot;,&quot;tsType&quot;:&quot;string&quot;}, &quot;height&quot;: {&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;320px&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const height = this.props.height || '320px';
+    const radius = this.props.radius ?? '14px';
+    return {
+      label: this.props.label || 'photo placeholder',
+      containerStyle: `position:relative; width:100%; height:${height}; border-radius:${radius}; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#EDE4D0;`,
+      stripeStyle: `position:absolute; inset:0; background:repeating-linear-gradient(135deg, #E4D8BC, #E4D8BC 14px, #DCCEAC 14px, #DCCEAC 28px);`,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

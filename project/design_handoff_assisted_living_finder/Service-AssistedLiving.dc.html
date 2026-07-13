@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Assisted Living Placement in Tupelo &amp; Amory, MS | Assisted Living Finder</title>
+  <meta name="description" content="Free, personal help finding the right assisted living community for your parent in Tupelo or Amory, MS. Call Ronald Duke at (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Assisted Living Placement"
+    title="Finding the right assisted living community"
+    intro="Assisted living gives your loved one their own space with help close by &mdash; meals, medication reminders, bathing, and daily support &mdash; plus a social life they may have been missing at home. There are more communities across Tupelo and Amory than most families realize, and they're not all alike. Ronald helps you sort through the real differences."
+    image-label="family touring an assisted living community"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "A parent who is safe living alone but needs help with meals, bathing, dressing, or medications.",
+        "Someone who's grown isolated and would benefit from company, activities, and a built-in community.",
+        "Families who are stretched thin trying to provide care themselves and need a sustainable plan."
+      ],
+      howHelp: [
+        "Ronald visits with your family to understand needs, budget, and what matters most &mdash; then narrows the field to communities that actually fit.",
+        "He knows the reputation, staffing, and feel of communities in Tupelo and Amory from years of local relationships, not just a database.",
+        "He sets up tours, joins you if you'd like, and helps you ask the right questions &mdash; all at no cost to your family."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

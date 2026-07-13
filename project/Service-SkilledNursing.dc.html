@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Skilled Nursing &amp; Nursing Home Referrals | Assisted Living Finder</title>
+  <meta name="description" content="Free help finding the right skilled nursing or nursing home care in Tupelo and Amory, MS after a hospital stay or health change. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Skilled Nursing / Nursing Home Referrals"
+    title="When medical care needs come first"
+    intro="Skilled nursing is for higher-level medical needs &mdash; recovery after a hospital stay, complex conditions, or round-the-clock nursing care that assisted living can't provide. These decisions often come fast, under pressure, sometimes from a hospital discharge desk. Ronald helps you move quickly without settling for the first open bed."
+    image-label="nurse assisting a resident in a skilled nursing setting"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "A parent being discharged from the hospital who needs ongoing nursing care or rehab before (or instead of) going home.",
+        "Someone with a medical condition requiring 24-hour licensed nursing supervision.",
+        "Families facing a fast decision, often within days, and unsure how to evaluate options under pressure."
+      ],
+      howHelp: [
+        "Ronald can move quickly &mdash; he understands discharge timelines and helps you avoid a rushed, wrong-fit decision.",
+        "He knows which facilities in the area are known for good rehab outcomes versus which to avoid.",
+        "He'll explain how Medicare, Medicaid, and private pay typically factor in, so there are no surprises."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

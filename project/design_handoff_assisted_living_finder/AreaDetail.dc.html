@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<article>
+  <div style="max-width:1240px; margin:0 auto; padding:64px 24px 0; display:flex; flex-wrap:wrap; gap:48px; align-items:flex-start;">
+    <div style="flex:1 1 480px;">
+      <div style="font-family:'Inter',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#C89A4B; margin-bottom:14px;">Serving {{ cityName }}, Mississippi</div>
+      <h1 style="font-family:'Fraunces',serif; font-weight:600; font-size:clamp(32px,4.5vw,50px); line-height:1.1; color:#2F4A3D; margin:0 0 22px;">Senior Living Guidance in {{ cityName }}, MS</h1>
+      <p style="font-family:'Inter',sans-serif; font-size:19px; line-height:1.7; color:#3E382E; margin:0 0 24px; max-width:58ch;">{{ intro }}</p>
+      <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:8px;">
+        <a href="tel:+16623154460" style="background:#2F4A3D; color:#FAF6EE; padding:14px 26px; border-radius:8px; text-decoration:none; font-family:'Inter',sans-serif; font-weight:600; font-size:16px;">Call (662) 315-4460</a>
+        <a href="Contact.dc.html" style="background:transparent; border:1.5px solid #2F4A3D; color:#2F4A3D; padding:13px 26px; border-radius:8px; text-decoration:none; font-family:'Inter',sans-serif; font-weight:600; font-size:16px;">Get Free Help</a>
+      </div>
+    </div>
+    <div style="flex:1 1 340px; min-width:280px;">
+      <dc-import name="ImagePlaceholder" label="{{ imageLabel }}" height="320px" hint-size="100%,320px"></dc-import>
+    </div>
+  </div>
+
+  <div style="max-width:1240px; margin:0 auto; padding:64px 24px;">
+    <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:28px; color:#2F4A3D; margin:0 0 24px;">What families in {{ cityName }} are looking for</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:24px;">
+      <sc-for list="{{ needs }}" as="need" hint-placeholder-count="3">
+        <div style="flex:1 1 260px; min-width:240px; background:#F3ECDD; border-radius:14px; padding:26px;">
+          <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:18px; color:#2F4A3D; margin:0 0 10px;">{{ need.title }}</h3>
+          <p style="font-family:'Inter',sans-serif; font-size:15px; line-height:1.6; color:#5B5548; margin:0;">{{ need.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="max-width:1240px; margin:0 auto; padding:0 24px 72px; display:flex; flex-wrap:wrap; gap:48px;">
+    <div style="flex:2 1 420px;">
+      <h2 style="font-family:'Fraunces',serif; font-weight:600; font-size:28px; color:#2F4A3D; margin:0 0 20px;">Why local knowledge matters in {{ cityName }}</h2>
+      <p style="font-family:'Inter',sans-serif; font-size:17px; line-height:1.75; color:#3E382E; margin:0 0 16px; max-width:64ch;">{{ localKnowledge1 }}</p>
+      <p style="font-family:'Inter',sans-serif; font-size:17px; line-height:1.75; color:#3E382E; margin:0; max-width:64ch;">{{ localKnowledge2 }}</p>
+    </div>
+    <div style="flex:1 1 260px;">
+      <div style="background:#2F4A3D; border-radius:16px; padding:32px; color:#EDE7D6;">
+        <h3 style="font-family:'Fraunces',serif; font-weight:600; font-size:20px; color:#FAF6EE; margin:0 0 12px;">Ready to talk?</h3>
+        <p style="font-family:'Inter',sans-serif; font-size:15px; line-height:1.6; color:#C9C0AA; margin:0 0 20px;">Ronald personally covers {{ cityName }} and the surrounding area. One call gets your family a clear next step &mdash; free, no obligation.</p>
+        <a href="tel:+16623154460" style="display:block; text-align:center; background:#C89A4B; color:#2F251A; padding:13px; border-radius:8px; text-decoration:none; font-family:'Inter',sans-serif; font-weight:700; font-size:15px;">Call (662) 315-4460</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cityName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Tupelo&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;intro&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Intro copy&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;imageLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;photo placeholder&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;needs&quot;:{&quot;editor&quot;:null,&quot;default&quot;:[],&quot;tsType&quot;:&quot;{title:string,body:string}[]&quot;},&quot;localKnowledge1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;localKnowledge2&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}"></script>
+</body>
+</html>

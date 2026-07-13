@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Assisted Living &amp; Senior Care in Tupelo, MS | Assisted Living Finder</title>
+  <meta name="description" content="Free, local help finding assisted living, memory care, or in-home care in Tupelo, MS. Ronald Duke guides Tupelo families at no cost. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":{"@type":"City","name":"Tupelo, MS"},"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="tupelo" hint-size="100%,80px"></dc-import>
+  <dc-import name="AreaDetail"
+    city-name="Tupelo"
+    intro="Tupelo is home to a wide range of senior care options, from assisted living communities near North Gloster to memory care neighborhoods on the edge of town &mdash; but knowing which one is actually right for your mom or dad takes more than a Google search. Ronald has spent years getting to know the communities, staff, and reputations behind the brochures, so your family doesn't have to start from zero."
+    image-label="senior living community in Tupelo, MS"
+    needs="{{ needs }}"
+    local-knowledge1="{{ lk1 }}"
+    local-knowledge2="{{ lk2 }}"
+    hint-size="100%,1000px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      needs: [
+        { title: "Assisted living near family", body: "Tupelo's size means most families can find a community close to home and to North Mississippi Medical Center &mdash; important for regular visits and doctor appointments." },
+        { title: "Memory care options", body: "Several Tupelo communities offer secured memory care wings; Ronald knows which have the staffing and training to back it up." },
+        { title: "A faster hospital-to-care transition", body: "With NMMC as the regional hospital, Tupelo families often need to move quickly from discharge to the right setting &mdash; Ronald helps you skip the guesswork." },
+      ],
+      lk1: "Tupelo has grown into the region's hub for healthcare and senior services, which means more choices &mdash; but also more variation in quality, waitlists, and pricing than families expect. A community with a beautiful lobby isn't always the one with attentive, well-trained staff.",
+      lk2: "Ronald lives and works in northeast Mississippi and visits these communities regularly. When a Tupelo family calls him, he's not reading from a national database &mdash; he's telling you what he's actually seen and heard, so you can make a confident decision the first time.",
+    };
+  }
+}
+
+</script>
+</body>
+</html>

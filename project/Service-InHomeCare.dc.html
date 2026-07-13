@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>In-Home Care Referrals | Assisted Living Finder</title>
+  <meta name="description" content="Free referrals to trusted in-home caregivers and agencies in Tupelo and Amory, MS, so your parent can stay in their own home safely. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="In-Home Care Referrals"
+    title="Help at home, when moving isn't the answer"
+    intro="Sometimes the right answer is staying put, with the right help coming in. In-home caregivers can assist with bathing, meals, light housekeeping, transportation, and companionship &mdash; from a few hours a week to around-the-clock. Ronald connects you with reputable local caregivers and agencies, not a random online listing."
+    image-label="in-home caregiver helping a senior at home"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "A parent who wants to stay in their own home and just needs a hand with daily tasks.",
+        "Families who live out of town and need trustworthy eyes and hands on the ground.",
+        "Anyone weighing in-home care against a move, who wants an honest comparison of cost and fit."
+      ],
+      howHelp: [
+        "Ronald refers only agencies and caregivers with strong local reputations and proper licensing.",
+        "He helps you figure out realistic hours of care needed &mdash; not too little, not more (and more expensive) than necessary.",
+        "If home care later isn't enough, he already knows your family and can guide the next step without starting over."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Respite &amp; Short-Term Senior Care | Assisted Living Finder</title>
+  <meta name="description" content="Free help finding short-term respite care in Tupelo and Amory, MS, so family caregivers can rest, travel, or recover. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Respite &amp; Short-Term Care"
+    title="A break for the caregiver, good care for them"
+    intro="Caring for a parent is exhausting, and you deserve a real break &mdash; a trip, a surgery to recover from, or just a breather &mdash; without worry. Many communities offer short-term respite stays: a few days to a few weeks, with the same support as a full resident. It's also a low-pressure way to try a community before committing."
+    image-label="senior enjoying a short-term respite stay"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "Family caregivers who need time away &mdash; for their own health, a trip, or simply rest.",
+        "Families testing whether a community might be the right long-term fit, without committing right away.",
+        "Anyone whose usual care arrangement falls through temporarily and needs a safe short-term option fast."
+      ],
+      howHelp: [
+        "Ronald knows which communities offer respite stays and typical availability, so you're not calling around alone.",
+        "He'll match the length of stay and level of care to what your loved one actually needs.",
+        "If a respite stay turns into 'let's just stay,' he's already there to help make it official, smoothly."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

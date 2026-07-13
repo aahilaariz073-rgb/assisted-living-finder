@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Independent Living Guidance | Assisted Living Finder</title>
+  <meta name="description" content="Free guidance finding active, maintenance-free independent living communities in Tupelo and Amory, MS. Call Ronald Duke at (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Independent Living Guidance"
+    title="A simpler life, without giving up independence"
+    intro="Not every senior needs care &mdash; many just want out from under a big house, yard work, and the upkeep of it all. Independent living communities offer private apartments or cottages, meals, housekeeping, and neighbors close by, with no daily care required. Ronald helps you find the right lifestyle fit, not just a facility."
+    image-label="active senior at an independent living community"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "A parent who is healthy and active but tired of maintaining a home alone.",
+        "Someone who wants built-in community, activities, and dining without giving up their privacy or independence.",
+        "Adult children who worry about a parent being isolated, even if care needs aren't a concern yet."
+      ],
+      howHelp: [
+        "Ronald matches lifestyle and budget &mdash; some communities lean social and active, others quieter and low-key.",
+        "He knows which independent living communities have a real waitlist and which have openings now.",
+        "He can also flag which communities offer a continuum of care, so a future move to assisted living isn't a whole new search."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

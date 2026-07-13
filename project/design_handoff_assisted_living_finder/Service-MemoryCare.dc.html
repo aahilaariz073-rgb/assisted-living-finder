@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Memory Care &amp; Alzheimer's Placement | Assisted Living Finder</title>
+  <meta name="description" content="Free help finding the right memory care community for a loved one with Alzheimer's or dementia in Tupelo or Amory, MS. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Memory Care &amp; Alzheimer's Placement"
+    title="Memory care, chosen with a steady hand"
+    intro="A dementia diagnosis changes what safety and quality of life look like. Memory care communities are built for it &mdash; secured environments, staff trained in dementia behaviors, and routines that reduce confusion and agitation. Ronald helps you find one that treats your loved one like a person, not a diagnosis."
+    image-label="caregiver with a memory care resident"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "A parent or spouse with Alzheimer's or another dementia who has started wandering, or needs more supervision than home allows.",
+        "Families who've been managing care at home but are exhausted, worried about safety, or watching a caregiver's own health decline.",
+        "Anyone told by a doctor or hospital discharge team that a secured, specialized setting is the safer next step."
+      ],
+      howHelp: [
+        "Ronald only recommends communities with real dementia-trained staff and secured units &mdash; he's seen the difference it makes firsthand.",
+        "He talks through your loved one's specific behaviors and stage of decline so the placement fits now, not just on paper.",
+        "He stays involved through the transition, because moving a parent with dementia is hard, and you shouldn't have to do it alone."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>

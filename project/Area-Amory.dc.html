@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Assisted Living &amp; Senior Care in Amory, MS | Assisted Living Finder</title>
+  <meta name="description" content="Free, local help finding assisted living, memory care, or in-home care in Amory, MS. Ronald Duke guides Amory families at no cost. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":{"@type":"City","name":"Amory, MS"},"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="amory" hint-size="100%,80px"></dc-import>
+  <dc-import name="AreaDetail"
+    city-name="Amory"
+    intro="Amory is a tight-knit community, and families here often want senior care that feels like an extension of that &mdash; not a big, impersonal facility an hour away. The good news: there are solid local and nearby options, plus in-home care that lets a parent stay right where they've always lived. Ronald helps Amory families sort out what's genuinely available close to home versus what will mean a longer drive."
+    image-label="senior living community near Amory, MS"
+    needs="{{ needs }}"
+    local-knowledge1="{{ lk1 }}"
+    local-knowledge2="{{ lk2 }}"
+    hint-size="100%,1000px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      needs: [
+        { title: "In-home care first", body: "Many Amory families prefer keeping a parent at home as long as possible; Ronald connects you with trusted local caregivers who know the area." },
+        { title: "Assisted living within reach", body: "When home care isn't enough, Ronald helps weigh Amory-area options against slightly farther communities in Tupelo, so you know exactly what you're trading off." },
+        { title: "Support during a health change", body: "After a fall or hospital stay, Amory families need someone who can move fast and explain nearby skilled nursing and rehab options clearly." },
+      ],
+      lk1: "Amory doesn't have the same density of senior communities as a larger city, which means the right fit sometimes means expanding the search slightly &mdash; or finding excellent in-home support instead. Families deserve to know their full range of honest options, not just the closest one.",
+      lk2: "Ronald works throughout northeast Mississippi, including Amory and the surrounding towns, and takes the time to understand what your family can realistically manage &mdash; distance, cost, and comfort included. One phone call gets you a clear, judgment-free plan.",
+    };
+  }
+}
+
+</script>
+</body>
+</html>

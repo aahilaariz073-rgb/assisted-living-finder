@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Free Senior Care Assessment | Assisted Living Finder</title>
+  <meta name="description" content="Get a free, no-obligation care assessment for your parent in Tupelo or Amory, MS. Ronald Duke helps you understand what kind of care actually fits. Call (662) 315-4460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body{margin:0;}</style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Assisted Living Finder","telephone":"+16623154460","email":"AssistedLivingFinder@gmail.com","areaServed":[{"@type":"City","name":"Tupelo, MS"},{"@type":"City","name":"Amory, MS"}],"founder":{"@type":"Person","name":"Ronald Duke"},"priceRange":"Free to families"}
+  </script>
+</helmet>
+<div style="background:#FAF6EE; min-height:100vh;">
+  <dc-import name="Header" current-page="services" hint-size="100%,80px"></dc-import>
+  <dc-import name="ServiceDetail"
+    eyebrow="Free Care Assessment"
+    title="Start with an honest conversation, not a form"
+    intro="Most families don't know which type of care they even need &mdash; and that's normal. A free care assessment is a simple conversation with Ronald about your parent's health, daily routine, safety concerns, and budget. There's no test to fail and no pressure. You'll walk away with a clear picture of what fits."
+    image-label="Ronald Duke talking with a family at their kitchen table"
+    who-for="{{ whoFor }}"
+    how-help="{{ howHelp }}"
+    hint-size="100%,900px">
+  </dc-import>
+  <dc-import name="Footer" hint-size="100%,320px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      whoFor: [
+        "Anyone just starting to research care options and feeling overwhelmed by where to begin.",
+        "Families who disagree on what level of care is needed and want an outside, experienced opinion.",
+        "Adult children out of state trying to make sense of a parent's situation from a distance."
+      ],
+      howHelp: [
+        "Ronald asks the right questions &mdash; about mobility, memory, medications, and daily life &mdash; to understand the real picture.",
+        "He'll tell you plainly if it's too soon for a big move, or if it's time to act.",
+        "The assessment is always free, whether or not you move forward with a placement."
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>
