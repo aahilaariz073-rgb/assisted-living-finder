@@ -73,9 +73,9 @@ a {
 }
 
 .site-header__logo img {
-  height: 60px;
-  width: 60px;
-  border-radius: 12px;
+  height: 84px;
+  width: 84px;
+  border-radius: 14px;
   object-fit: cover;
   object-position: center 40%;
   background: #8FCB9F;
@@ -466,9 +466,9 @@ a {
 }
 
 .site-footer__brand-row img {
-  height: 54px;
-  width: 54px;
-  border-radius: 12px;
+  height: 76px;
+  width: 76px;
+  border-radius: 14px;
   object-fit: cover;
   object-position: center 40%;
   background: #8FCB9F;
