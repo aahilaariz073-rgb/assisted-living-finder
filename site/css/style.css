@@ -73,12 +73,9 @@ a {
 }
 
 .site-header__logo img {
-  height: 48px;
-  width: 48px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center 40%;
-  background: #8FCB9F;
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -466,12 +463,9 @@ a {
 }
 
 .site-footer__brand-row img {
-  height: 44px;
-  width: 44px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center 40%;
-  background: #8FCB9F;
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
 }
 
 .site-footer__brand-name {
