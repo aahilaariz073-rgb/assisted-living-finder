@@ -1052,6 +1052,14 @@ a {
   top: 100px;
 }
 
+.about-layout__photo-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
 .pull-quote {
   border-left: 3px solid var(--color-gold);
   padding: 4px 0 4px 24px;
