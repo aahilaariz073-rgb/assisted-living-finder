@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://assisted-living-finder.vercel.app/sitemap.xml
+Sitemap: https://www.assistedlivingfinder.co/sitemap.xml
